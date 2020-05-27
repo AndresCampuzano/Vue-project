@@ -96,6 +96,14 @@ new Vue({
 		};
 	},
 
+	created() {
+		console.log('Created...');
+	},
+
+	mounted() {
+		console.log('Mounted...');
+	},
+
 	methods: {
 		updateColor(color) {
 			this.color = color || this.color.split('').reverse().join('');
